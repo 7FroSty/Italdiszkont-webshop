@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Mobil_alkfejl/Italdiszkontwebshop/app/src/main/res/drawable/ic_add_to_cart.xml" value="0.174" />
+        <entry key="..\:/Mobil_alkfejl/Italdiszkontwebshop/app/src/main/res/drawable/ic_categories.xml" value="0.317" />
+        <entry key="..\:/Mobil_alkfejl/Italdiszkontwebshop/app/src/main/res/drawable/ic_delete_from_cart.xml" value="0.317" />
+        <entry key="..\:/Mobil_alkfejl/Italdiszkontwebshop/app/src/main/res/drawable/red_circle.xml" value="0.317" />
+        <entry key="..\:/Mobil_alkfejl/Italdiszkontwebshop/app/src/main/res/layout/activity_login.xml" value="0.271286231884058" />
+        <entry key="..\:/Mobil_alkfejl/Italdiszkontwebshop/app/src/main/res/layout/activity_main.xml" value="0.23541666666666666" />
+        <entry key="..\:/Mobil_alkfejl/Italdiszkontwebshop/app/src/main/res/layout/activity_product_list.xml" value="0.23541666666666666" />
+        <entry key="..\:/Mobil_alkfejl/Italdiszkontwebshop/app/src/main/res/layout/activity_registration.xml" value="0.23541666666666666" />
+        <entry key="..\:/Mobil_alkfejl/Italdiszkontwebshop/app/src/main/res/layout/alert_cart.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobil_alkfejl/Italdiszkontwebshop/app/src/main/res/layout/product.xml" value="0.5" />
+        <entry key="..\:/Mobil_alkfejl/Italdiszkontwebshop/app/src/main/res/menu/menu.xml" value="0.27395833333333336" />
+        <entry key="..\:/Mobil_alkfejl/Italdiszkontwebshop/app/src/main/res/menu/webshop_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Italdiszkontwebshop/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3415" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Italdiszkontwebshop/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3415" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Italdiszkontwebshop/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Italdiszkontwebshop/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Italdiszkontwebshop/app/src/main/res/layout/activity_product_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Italdiszkontwebshop/app/src/main/res/layout/activity_registration.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Italdiszkontwebshop/app/src/main/res/layout/product.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Italdiszkontwebshop/app/src/main/res/menu/menu.xml" value="0.24322916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/searchBar"
+        app:showAsAction="always"
+        android:title="Keresés"
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="android.widget.SearchView"
+        >
+    </item>
+    <item
+        android:id="@+id/categories"
+        app:showAsAction="always"
+        android:title="Kategóriák"
+        android:icon="@drawable/ic_categories"
+        >
+    </item>
+    <item
+        android:id="@+id/cart"
+        app:showAsAction="always"
+        android:title="Kosár"
+        android:icon="@drawable/ic_cart"
+        app:actionLayout="@layout/alert_cart"
+        >
+    </item>
+    <item
+        android:id="@+id/logout"
+        app:showAsAction="always"
+        android:title="Kijelentkezés"
+        android:icon="@drawable/ic_logout"
+        >
+    </item>
+</menu>

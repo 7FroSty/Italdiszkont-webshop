@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">Italdiszkont</string>
+    <string name="welcome">Üdvözöllek az italboltomban!</string>
+    <string name="main_message">Kérlek jelentkezz be, vagy ha még nincs fiókod, akkor regisztrálj.</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="guest_login">Bejelentkezés vendégként</string>
+    <string name="registration">Regisztráció</string>
+    <string name="cancel">Mégse</string>
+    <string name="email">E-mail cím</string>
+    <string name="username">Felhasználónév</string>
+    <string name="password">Jelszó</string>
+    <string name="password_again">Jelszó újra</string>
+    <string name="phone_number">Telefonszám</string>
+    <string name="postal_address">Szállítási cím</string>
+    <string name="consent">Elmúltam 18 éves</string>
+
+    <string name="product_name_placeholder">Terméknév</string>
+    <string name="product_info_placeholder">Információ</string>
+    <string name="alcohol_content_placeholder">Alkoholtartalom</string>
+    <string name="unit_price_placeholder">Egységár</string>
+    <string name="price_placeholder">Ár</string>
+    <string name="add_to_cart">Kosárba</string>
+    <string name="delete_from_cart">Törlés</string>
+
+    <string-array name="product_names">
+        <item>Borsodi 0,5l doboz</item>
+        <item>Kőbányai 0,5l doboz</item>
+        <item>Soproni 0,5l doboz</item>
+        <item>Soproni Démon 0,5l doboz</item>
+        <item>Kőbányai 2l PET</item>
+        <item>La Fiesta Édes Élmény Fehér 0,75l</item>
+        <item>La Fiesta Édes Élmény Vörös 0,75l</item>
+        <item>La Fiesta Édes Élmény Rosé 0,75l</item>
+        <item>Finlandia Vodka 0,5l</item>
+        <item>Jameson 0,5l</item>
+        <item>Sierra Tequila Silver 0,5l</item>
+        <item>Coca Cola 0,5l PET</item>
+        <item>Coca Cola ZERO 0,5l PET</item>
+        <item>Theodora szénsavmentes természetes ásványvíz 1,5l</item>
+        <item>Theodora szénsavas természetes ásványvíz 1,5l</item>
+    </string-array>
+
+    <string-array name="product_infos">
+        <item>Világos sör.</item>
+        <item>Világos sör.</item>
+        <item>Világos sör.</item>
+        <item>Barna sör.</item>
+        <item>Világos sör.</item>
+        <item>Édes, fehérbor.</item>
+        <item>Édes, vörösbor.</item>
+        <item>Édes, rosébor.</item>
+        <item>Finn vodka.</item>
+        <item>Ír whiskey.</item>
+        <item>Silver tequila.</item>
+        <item>Kóla.</item>
+        <item>Cukormentes kóla.</item>
+        <item>Szénsavmentes ásványvíz.</item>
+        <item>Szénsavas ásványvíz.</item>
+    </string-array>
+
+    <string-array name="alcohol_contents">
+        <item>4.5</item>
+        <item>4.3</item>
+        <item>4.5</item>
+        <item>5.2</item>
+        <item>4.3</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>40</item>
+        <item>40</item>
+        <item>38</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </string-array>
+
+    <integer-array name="unit_prices">
+        <item>478</item>
+        <item>478</item>
+        <item>478</item>
+        <item>558</item>
+        <item>375</item>
+        <item>700</item>
+        <item>700</item>
+        <item>700</item>
+        <item>7598</item>
+        <item>10998</item>
+        <item>11398</item>
+        <item>578</item>
+        <item>578</item>
+        <item>73</item>
+        <item>73</item>
+    </integer-array>
+
+    <integer-array name="prices">
+        <item>239</item>
+        <item>239</item>
+        <item>239</item>
+        <item>279</item>
+        <item>749</item>
+        <item>560</item>
+        <item>560</item>
+        <item>560</item>
+        <item>3799</item>
+        <item>5499</item>
+        <item>5699</item>
+        <item>289</item>
+        <item>289</item>
+        <item>109</item>
+        <item>109</item>
+    </integer-array>
+
+    <array name="product_images">
+        <item>@drawable/borsodi</item>
+        <item>@drawable/kobanyai</item>
+        <item>@drawable/soproni</item>
+        <item>@drawable/soproni_demon</item>
+        <item>@drawable/kobanyai_pet</item>
+        <item>@drawable/la_fiesta_white</item>
+        <item>@drawable/la_fiesta_red</item>
+        <item>@drawable/la_fiesta_rose</item>
+        <item>@drawable/vodka</item>
+        <item>@drawable/jameson</item>
+        <item>@drawable/tequila</item>
+        <item>@drawable/coca_cola</item>
+        <item>@drawable/coca_cola_zero</item>
+        <item>@drawable/theodora_still</item>
+        <item>@drawable/theodora_sparkling</item>
+    </array>
+</resources>

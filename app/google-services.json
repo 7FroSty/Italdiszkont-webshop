@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1059529736553",
+    "project_id": "italdiszkont-webshop",
+    "storage_bucket": "italdiszkont-webshop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059529736553:android:0914ac63cb5d75982b3df8",
+        "android_client_info": {
+          "package_name": "com.example.italdiszkontwebshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059529736553-6e4r9bbh0canllr1tgqjbkbsls693avh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.italdiszkontwebshop",
+            "certificate_hash": "8d93a389085b7e4b6c8b86ede60028868ddd5610"
+          }
+        },
+        {
+          "client_id": "1059529736553-a3u17qk4ehprierd5uk4dj491ppb1hod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhm94ug4hnT1Pn-y0uegKx0G0ZNjTGwlY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059529736553-a3u17qk4ehprierd5uk4dj491ppb1hod.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

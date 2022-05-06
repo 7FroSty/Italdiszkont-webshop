@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/productImageIV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/productNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productImageIV"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/product_name_placeholder"
+            android:textColor="?android:textColorSecondary"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/productInfoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productNameTV"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:text="@string/product_info_placeholder"
+            android:textColor="?android:textColorSecondary" />
+
+        <TextView
+            android:id="@+id/alcoholContentTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productInfoTV"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:text="@string/alcohol_content_placeholder" />
+
+        <TextView
+            android:id="@+id/unitPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alcoholContentTV"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:text="@string/unit_price_placeholder" />
+
+        <TextView
+            android:id="@+id/priceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/unitPriceTV"
+            android:layout_marginBottom="10dp"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/price_placeholder" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/priceTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/addToCartB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_add_to_cart"
+                android:layout_marginEnd="10dp"
+                android:text="@string/add_to_cart"/>
+
+            <Button
+                android:id="@+id/deleteFromCartB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_delete_from_cart"
+                android:layout_marginStart="10dp"
+                android:text="@string/delete_from_cart"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
