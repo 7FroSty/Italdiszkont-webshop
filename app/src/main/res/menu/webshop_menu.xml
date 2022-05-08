@@ -4,7 +4,7 @@
     <item
         android:id="@+id/searchBar"
         app:showAsAction="always"
-        android:title="Keresés"
+        android:title="@string/search_bar"
         android:icon="@drawable/ic_search"
         app:actionViewClass="android.widget.SearchView"
         >
@@ -12,14 +12,22 @@
     <item
         android:id="@+id/categories"
         app:showAsAction="always"
-        android:title="Kategóriák"
+        android:title="@string/categories"
         android:icon="@drawable/ic_categories"
         >
+        <menu>
+            <item
+                android:id="@+id/allProducts"
+                android:title="@string/all_products" />
+            <item
+                android:id="@+id/alcoholicBeverages"
+                android:title="@string/alcoholic_beverages" />
+        </menu>
     </item>
     <item
         android:id="@+id/cart"
         app:showAsAction="always"
-        android:title="Kosár"
+        android:title="@string/cart"
         android:icon="@drawable/ic_cart"
         app:actionLayout="@layout/alert_cart"
         >
@@ -27,7 +35,7 @@
     <item
         android:id="@+id/logout"
         app:showAsAction="always"
-        android:title="Kijelentkezés"
+        android:title="@string/logout"
         android:icon="@drawable/ic_logout"
         >
     </item>

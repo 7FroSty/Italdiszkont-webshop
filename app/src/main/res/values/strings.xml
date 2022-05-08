@@ -21,6 +21,12 @@
     <string name="price_placeholder">Ár</string>
     <string name="add_to_cart">Kosárba</string>
     <string name="delete_from_cart">Törlés</string>
+    <string name="search_bar">Keresés</string>
+    <string name="categories">Kategóriák</string>
+    <string name="all_products">Összes termék</string>
+    <string name="alcoholic_beverages">Szeszes italok</string>
+    <string name="cart">Kosár</string>
+    <string name="logout">Kijelentkezés</string>
 
     <string-array name="product_names">
         <item>Borsodi 0,5l doboz</item>

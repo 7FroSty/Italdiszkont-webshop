@@ -20,12 +20,14 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
@@ -72,15 +74,23 @@ public class ProductListActivity extends AppCompatActivity {
         mFirestore = FirebaseFirestore.getInstance();
         mProducts = mFirestore.collection("Products");
 
-        queryData();
+        queryData("all_products");
 
         mNotificationHandler = new NotificationHandler((this));
     }
 
-    private void queryData() {
+    private void queryData(String category) {
         mProductsData.clear();
-        mProducts.orderBy("alcoholContent").limit(productLimit).get()
-                .addOnSuccessListener(queryDocumentSnapshots -> {
+        Task<QuerySnapshot> query;
+
+        if (category.equals("alcoholic_beverages")) {
+            query = mProducts.orderBy("alcoholContent").whereGreaterThan("alcoholContent", 0.0).limit(productLimit).get();
+        }
+        else {
+            query = mProducts.orderBy("price").limit(productLimit).get();
+        }
+
+        query.addOnSuccessListener(queryDocumentSnapshots -> {
             for (QueryDocumentSnapshot document : queryDocumentSnapshots) {
                 Product product = document.toObject(Product.class);
                 product.setId(document.getId());
@@ -89,7 +99,7 @@ public class ProductListActivity extends AppCompatActivity {
 
             if (mProductsData.size() == 0) {
                 initializeData();
-                queryData();
+                queryData("all_products");
             }
 
             mAdapter.notifyDataSetChanged();
@@ -128,7 +138,7 @@ public class ProductListActivity extends AppCompatActivity {
                     Toast.makeText(this, "Sikertelen törlés!", Toast.LENGTH_LONG).show();
                 });
 
-        queryData();
+        queryData("all_products");
         mNotificationHandler.cancel();
     }
 
@@ -157,8 +167,13 @@ public class ProductListActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.categories:
-                Log.d(LOG_TAG, "Kategóriák megnyomva");
+            case R.id.allProducts:
+                Log.d(LOG_TAG, "Összes termék opció megnyomva");
+                queryData("all_products");
+                return true;
+            case R.id.alcoholicBeverages:
+                Log.d(LOG_TAG, "Alkoholos italok opció megnyomva");
+                queryData("alcoholic_beverages");
                 return true;
             case R.id.cart:
                 Log.d(LOG_TAG, "Kosár megnyomva");
@@ -210,7 +225,7 @@ public class ProductListActivity extends AppCompatActivity {
                     Toast.makeText(this, "Nem sikerült frissíteni a terméket.", Toast.LENGTH_LONG).show();
                 });
 
-        queryData();
+        queryData("all_products");
         mNotificationHandler.send(product.getName());
     }
 }
